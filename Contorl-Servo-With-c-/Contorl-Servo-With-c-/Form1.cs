@@ -40,7 +40,9 @@ namespace Contorl_Servo_With_c_
 
             if (port.IsOpen)
             {
-
+                port.WriteLine(trackBar1.Value.ToString());
+                //Console.WriteLine(trackBar1.Value.ToString());
+                Console.WriteLine(port);
             }
             
         }
